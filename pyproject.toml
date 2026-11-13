@@ -1,0 +1,27 @@
+[project]
+name = "applied-ai-engineering"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sai Nithin", email = "jagannadhasainithinkommineni@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.162.5",
+    "pydantic>=2.14.3",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+applied-ai-engineering = "applied_ai_engineering:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.5",
+]
